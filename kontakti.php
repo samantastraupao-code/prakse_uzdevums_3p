@@ -16,5 +16,18 @@
         </ul>
     </nav>
   </div>
+
+  <div class="container">
+
+    <div>
+      NUMURS
+      GMAILS
+    </div>
+
+    <div>
+      GOOGLE MAPS
+    </div>
+    
+  </div>
 </body>
 </html>

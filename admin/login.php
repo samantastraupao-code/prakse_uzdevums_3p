@@ -17,21 +17,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result && mysqli_num_rows($result) === 1) {
             $user = mysqli_fetch_assoc($result);
 
-            // Pārbaudām paroli
+            // Pārbauda paroli
             if (password_verify($password, $user["password"])) {
 
-                // Saglabājam sesiju
+                // Saglabā sesiju
                 $_SESSION["admin"] = true;
 
-                // Pārsūtām uz admin paneli
-                header("Location: pieraksts/pieraksts_a.php");
+                header("Location: pieraksts/pieraksts.php");
                 exit();
 
             } else {
-                $error = "Wrong password.";
+                $error = "Nepareiza parole.";
             }
         } else {
-            $error = "Admin user missing in database.";
+            $error = "Datubāzē nav admin lietotājs";
         }
     }
 }
