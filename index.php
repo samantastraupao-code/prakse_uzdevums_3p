@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AT service</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="topnav">
@@ -18,10 +19,12 @@
   </div>
 
   <div class="container">
-    <p>ATTĒLS</p>
-    <p>VĀRDS UN UZVĀRDS</p>
-    <p>IEVADS</p>
-    <p>APRAKSTS</p>
+    <div class="main_box">
+      <h1>AT Service</h1>
+      <a class="btn" href="pakalpojumi.php">Pakalpojumi</a>
+      <a class="btn" href="pieraksts.php">Pierakstīties</a>
+    </div>
   </div>
+
 </body>
 </html>

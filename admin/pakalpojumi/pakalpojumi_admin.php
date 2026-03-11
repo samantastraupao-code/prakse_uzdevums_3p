@@ -28,6 +28,7 @@ $result = mysqli_query($con, $query);
         <tr>
             <th>ID</th>
             <th>Nosaukums</th>
+            <th>Pievienot pakalpojumu</th>
             <th>Dzēst</th>
         </tr>
     </thead>
@@ -38,6 +39,8 @@ $result = mysqli_query($con, $query);
             <td><?php echo $row['id']; ?></td>
             <td><?php echo htmlspecialchars($row['nosaukums']); ?></td>
             <td>
+
+            <a href="add_pakalpojums.php"> Pievienot</a>
                 <a href="delete_pakalpojums.php?id=<?php echo $row['id']; ?>"
                    onclick="return confirm('Vai tiešām dzēst šo pakalpojumu?')">
                    Dzēst
